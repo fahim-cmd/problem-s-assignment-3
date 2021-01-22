@@ -56,22 +56,23 @@ function hotelCost(remaining) {
 }
 
 
-function megaFriend(arr) {
+function megaFriend(name) {
 
-    if (arr < 0 || arr == "") {
+    if (name < 0 || name == "") {
         return "Something went wrong: ERROR";
     }
     else {
-        let longestName = arr[0];
+        let longestName = name[0];
 
-        for (var i = 0; i < arr.length; i++) {
-            const nameLength = arr[i].length;
+        for (var i = 0; i < name.length; i++) {
+            const nameLength = name[i].length;
             if (nameLength > longestName.length) {
-                longestName = arr[i];
+                longestName = name[i];
             }
         }
         return longestName;
     }
 }
+
 
 
